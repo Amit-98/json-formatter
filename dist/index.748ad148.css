@@ -1,0 +1,277 @@
+body {
+  color: #333;
+  background: #e0ffff;
+  margin: 0;
+  padding: 70px 0 0;
+  font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.page-wrapper {
+  min-height: calc(100vh - 210px);
+  display: flex;
+}
+
+.main-content {
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  display: flex;
+}
+
+.ad-space {
+  background-color: #00ffff1a;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  display: flex;
+}
+
+.ad-container {
+  background-color: #fff;
+  border: 1px solid #00ced1;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 600px;
+  display: flex;
+  box-shadow: 0 0 10px #00ced14d;
+}
+
+.container {
+  background: #fff;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  overflow: hidden;
+  box-shadow: 0 0 20px #00ced166;
+}
+
+.input-section, .output-section {
+  flex-direction: column;
+  flex: 1;
+  padding: 20px;
+  display: flex;
+}
+
+h2 {
+  color: #008b8b;
+  text-align: center;
+  margin-top: 0;
+  font-size: 1.5em;
+}
+
+textarea {
+  resize: none;
+  border: 1px solid #00ced1;
+  border-radius: 10px;
+  flex: 1;
+  min-height: 500px;
+  padding: 15px;
+  font-family: Consolas, monospace;
+  font-size: 14px;
+  line-height: 1.5;
+  transition: all .3s;
+}
+
+#input {
+  color: #006400;
+  background: #e0ffff;
+}
+
+#output {
+  color: #00008b;
+  background: azure;
+}
+
+textarea:focus {
+  outline: none;
+  box-shadow: 0 0 10px #00ced180;
+}
+
+.control-section {
+  background: linear-gradient(#00ced1, #20b2aa);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  padding: 10px 0;
+  display: flex;
+}
+
+.button-group {
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 0;
+  display: flex;
+}
+
+button, .upload-btn {
+  cursor: pointer;
+  background: #fff;
+  border: none;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  font-size: 24px;
+  transition: all .3s;
+  display: flex;
+  box-shadow: 0 4px 6px #0000001a;
+}
+
+button:hover, .upload-btn:hover {
+  background: azure;
+  transform: scale(1.1);
+  box-shadow: 0 6px 8px #0003;
+}
+
+.button-group span {
+  color: #fff;
+  text-shadow: 1px 1px 2px #0000004d;
+  margin-top: 5px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+@media (width <= 1200px) {
+  .ad-space {
+    display: none;
+  }
+}
+
+@media (width <= 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .control-section {
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+  }
+
+  .button-group {
+    margin: 0 10px;
+  }
+
+  textarea {
+    min-height: 300px;
+  }
+
+  .footer-nav {
+    flex-direction: column;
+    display: flex;
+  }
+
+  .footer-nav a {
+    margin: 5px 0;
+  }
+
+  .header-content {
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .main-nav {
+    margin-top: 15px;
+  }
+
+  .nav-link {
+    margin: 0 10px;
+  }
+}
+
+.footer {
+  color: #fff;
+  background-color: #008b8b;
+  padding: 20px 0;
+  font-size: 14px;
+}
+
+.footer-content {
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+}
+
+.footer p {
+  margin: 10px 0;
+}
+
+.footer-nav {
+  margin: 15px 0;
+}
+
+.footer-nav a {
+  color: #e0ffff;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: color .3s;
+}
+
+.footer-nav a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.footer-disclaimer {
+  color: #a0e6e6;
+  font-size: 12px;
+}
+
+.header {
+  color: #fff;
+  background-color: #008b8b;
+  padding: 15px 0;
+  box-shadow: 0 2px 5px #0000001a;
+}
+
+.header-content {
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+}
+
+.logo {
+  align-items: center;
+  display: flex;
+}
+
+.logo-img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.logo-text {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.main-nav {
+  display: flex;
+}
+
+.nav-link {
+  color: #fff;
+  margin-left: 20px;
+  text-decoration: none;
+  transition: color .3s;
+}
+
+.nav-link:hover {
+  color: #e0ffff;
+}
+/*# sourceMappingURL=index.748ad148.css.map */
